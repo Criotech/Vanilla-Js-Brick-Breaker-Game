@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Brick Game</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #gameScreen {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="gameScreen" height=600 width=800>
+
+  </canvas>
+
+  <script type="module" src="javascripts/script.js"></script>
+</body>
+
 </html>
