@@ -6,9 +6,9 @@ export default class InputHandler {
                 case 37: 
                     paddle.moveLeft();
                     break;
-                    
+
                 case 39: 
-                    alert("move right");
+                    paddle.moveRight();
                     break;
             }
         })
