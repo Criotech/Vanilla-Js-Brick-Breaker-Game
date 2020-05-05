@@ -21,7 +21,7 @@ export default class Game {
 
         this.gameObjects = [this.ball, this.paddle, ...this.bricks];
 
-        new InputHandler(this.paddle);
+        new InputHandler(this.paddle, this);
 
     }
 
@@ -32,7 +32,8 @@ export default class Game {
     }
 
     update(deltaTime){
-
         this.gameObjects.forEach((object) => object.update(deltaTime));
+    
+        this.gameObjects = this.gameObjects.filter(object => !object.markedForDeletion ) 
     }
 }
